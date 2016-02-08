@@ -1,4 +1,4 @@
-puppet:
+puppet3:
   pkg.installed
 
 /etc/puppet/puppet.conf:

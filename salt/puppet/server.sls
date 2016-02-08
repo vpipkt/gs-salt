@@ -1,4 +1,4 @@
-puppet-server:
+puppet3-server:
   pkg.installed
 
 /etc/puppet/puppet.conf:
