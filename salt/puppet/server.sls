@@ -5,6 +5,10 @@ puppet3-server:
   file.managed:
     - source: salt://puppet/server-puppet.conf
 
+/etc/puppet/fileserver.conf:
+  file.managed:
+    - source: salt://puppet/server-fileserver.conf
+
 puppetmaster-service:
   service.running:
     - name: puppetmaster
