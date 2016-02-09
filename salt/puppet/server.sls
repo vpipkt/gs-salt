@@ -47,6 +47,11 @@ puppet3-server:
     - user: puppet
     - group: puppet
 
+/etc/puppet/hieradata/hosts:
+  file.directory:
+    - user: puppet
+    - group: puppet
+
 /etc/puppet/hieradata/hosts/head.yaml:
   file.managed:
     - source: salt://puppet/server/hieradata/hosts/head.yaml
