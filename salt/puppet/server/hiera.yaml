@@ -1,0 +1,9 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - 'hosts/%{::hostname}'
+  - 'classes'
+  - 'default'
+:yaml:
+  :datadir: '/etc/puppet/hieradata'

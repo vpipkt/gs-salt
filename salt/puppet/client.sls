@@ -3,7 +3,7 @@ puppet3:
 
 /etc/puppet/puppet.conf:
   file.managed:
-    - source: salt://puppet/client-puppet.conf
+    - source: salt://puppet/client/puppet.conf
 
 puppet-service:
   service.running:
