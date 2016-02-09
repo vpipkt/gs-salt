@@ -77,6 +77,16 @@ puppet3-server:
     - user: puppet
     - group: puppet
 
+s3-puppet-modules:
+  archive.extracted:
+    - name: /etc/puppet/
+    - source: s3://geoint-data/bootstrap/puppet-modules.tgz
+    - source_hash: md5=078951bf87b304bc9b7f9f2af7f3012f
+    - archive_format: tar
+    - if_missing: /etc/puppet/modules/java
+    - user: puppet
+    - group: puppet
+
 puppetmaster-service:
   service.running:
     - name: puppetmaster
