@@ -1,0 +1,41 @@
+# java variables
+java::version_major : 7
+java::version_update : 79
+
+# hadoop variables
+hadoop::namenode : head
+hadoop::secondary_namenode : worker1
+hadoop::resourcemanager : head
+hadoop::jobhistoryserver : head
+hadoop::dfs_replication : 3
+hadoop::dfs_dirs :
+  - /data1
+  - /data2
+  - /data3
+  - /data4
+hadoop::nodemanager_resource_memory_mb : 10240
+hadoop::yarn_scheduler_maximum_allocation_mb : 10240
+
+# zookeeper variables
+zookeeper::servers :
+  - worker1:2181
+  - worker2:2181
+  - worker3:2181
+
+# accumulo variables
+accumulo::version : 1.6.4
+accumulo::instance : ccri-gs
+accumulo::masters :
+  - head
+accumulo::monitors :
+  - head
+accumulo::tracers :
+  - head
+accumulo::gcs :
+  - head
+accumulo::slaves :
+  - worker1
+  - worker2
+  - worker3
+  - worker4
+

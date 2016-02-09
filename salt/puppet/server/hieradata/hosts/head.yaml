@@ -1,0 +1,11 @@
+classes :
+  - 'accumulo'
+  - 'accumulo::master'
+  - 'accumulo::monitor'
+  - 'accumulo::tracer'
+  - 'accumulo::gc'
+  - 'hadoop'
+  - 'hadoop::namenode'
+  - 'hadoop::resourcemanager'
+  - 'hadoop::nodemanager'
+  - 'hadoop::historyserver'

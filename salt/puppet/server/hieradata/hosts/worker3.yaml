@@ -1,0 +1,9 @@
+classes :
+  - 'accumulo'
+  - 'accumulo::tserver'
+  - 'hadoop'
+  - 'hadoop::datanode'
+  - 'zookeeper'
+
+zookeeper::myid : 3
+zookeeper::role : server
