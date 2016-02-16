@@ -1,6 +1,14 @@
 puppet3-server:
   pkg.installed
 
+puppetmaster-service-stop:
+  service.dead:
+    - name: puppetmaster
+
+puppet-service-stop:
+  service.dead:
+    - name: puppet
+
 /etc/puppet/puppet.conf:
   file.managed:
     - source: salt://puppet/server/puppet.conf
