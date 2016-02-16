@@ -1,13 +1,5 @@
-puppet3-server:
+puppet3:
   pkg.installed
-
-puppetmaster-service-stop:
-  service.dead:
-    - name: puppetmaster
-
-puppet-service-stop:
-  service.dead:
-    - name: puppet
 
 /etc/puppet/puppet.conf:
   file.managed:
@@ -99,6 +91,9 @@ s3-puppet-modules:
     - if_missing: /etc/puppet/modules/java
     - user: puppet
     - group: puppet
+
+puppet3-server:
+  pkg.installed
 
 puppetmaster-service:
   service.running:
