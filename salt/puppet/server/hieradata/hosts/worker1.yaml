@@ -4,6 +4,7 @@ classes :
   - 'hadoop'
   - 'hadoop::secondarynamenode'
   - 'hadoop::datanode'
+  - 'hadoop::nodemanager'
   - 'zookeeper'
 
 zookeeper::myid : 1

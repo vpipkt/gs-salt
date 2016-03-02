@@ -3,6 +3,7 @@ classes :
   - 'accumulo::tserver'
   - 'hadoop'
   - 'hadoop::datanode'
+  - 'hadoop::nodemanager'
   - 'zookeeper'
 
 zookeeper::myid : 3

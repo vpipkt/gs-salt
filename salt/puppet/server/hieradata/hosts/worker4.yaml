@@ -3,3 +3,4 @@ classes :
   - 'accumulo::tserver'
   - 'hadoop'
   - 'hadoop::datanode'
+  - 'hadoop::nodemanager'

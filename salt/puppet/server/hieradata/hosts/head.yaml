@@ -7,5 +7,6 @@ classes :
   - 'hadoop'
   - 'hadoop::namenode'
   - 'hadoop::resourcemanager'
-  - 'hadoop::nodemanager'
   - 'hadoop::historyserver'
+
+hadoop::dfs_dirs : /data1
