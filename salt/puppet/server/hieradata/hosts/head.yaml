@@ -9,4 +9,5 @@ classes :
   - 'hadoop::resourcemanager'
   - 'hadoop::historyserver'
 
-hadoop::dfs_dirs : /data1
+hadoop::dfs_dirs : 
+ - /data1
