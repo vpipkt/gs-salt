@@ -91,7 +91,7 @@ s3-puppet-modules:
   archive.extracted:
     - name: /etc/puppet/
     - source: s3://geoint-data/bootstrap/puppet-modules.tgz
-    - source_hash: md5=078951bf87b304bc9b7f9f2af7f3012f
+    - source_hash: md5=da675bb0eecdb65f5ae2dcf833f238d3
     - archive_format: tar
     - if_missing: /etc/puppet/modules/java
     - user: puppet
